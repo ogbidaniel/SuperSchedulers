@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <random>
 #include <iomanip>
+#include <climits>
 using namespace std;
 
 struct Process {
