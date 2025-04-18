@@ -122,7 +122,7 @@ void simulate_SRT(vector<Process> procs) {
 
 int main() {
     int n = 50; // number of processes
-    int k = 1000; // max arrival time
+    int k = 200; // max arrival time
     double d = 20.0, v = 5.0; // mean and stddev for total CPU time
 
     auto procs = generate_processes(n, k, d, v);
