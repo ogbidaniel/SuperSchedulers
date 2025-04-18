@@ -353,7 +353,7 @@ double simulateSRT(std::vector<Process> processes, int n) {
 int main() {
     // Simulation Parameters
     int n = 50;              // Number of processes
-    int k = 1000;            // Max arrival time
+    int k = 200;            // Max arrival time
     double v_percentage = 0.3; // Standard deviation as a percentage of d (e.g., 30%)
 
     // Average CPU times to test (d values)
