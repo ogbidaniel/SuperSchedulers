@@ -353,12 +353,12 @@ double simulateSRT(std::vector<Process> processes, int n) {
 int main() {
     // Simulation Parameters
     int n = 50;              // Number of processes
-    int k = 200;            // Max arrival time
-    double v_percentage = 0.3; // Standard deviation as a percentage of d (e.g., 30%)
+    int k = 1000;            // Max arrival time
+    double v_percentage = 1.0; // Standard deviation as a percentage of d (e.g., 30%)
 
     // Average CPU times to test (d values)
     // Select values relative to k/n (average arrival interval)
-    double avg_arrival_interval = static_cast<double>(k) / n; // = 1000 / 50 = 20
+    double avg_arrival_interval = static_cast<double>(k) / n; 
     std::vector<double> d_values;
     // Examples: Much smaller, around, and much larger than avg_arrival_interval
     d_values.push_back(avg_arrival_interval * 0.1);  // d = 2 (Low contention)
@@ -373,7 +373,9 @@ int main() {
     std::random_device rd;
     std::mt19937 gen(rd()); // Mersenne Twister engine seeded with random_device
 
-    // Output Header for Results (Tab-separated for easy plotting)
+    std::cout << "# n=" << n
+          << "  k=" << k
+          << "  v_pct=" << v_percentage << "\n";
     std::cout << "d\tATT_FIFO\td/ATT_FIFO\tATT_SJF\td/ATT_SJF\tATT_SRT\td/ATT_SRT\n";
     std::cout << std::fixed << std::setprecision(4); // Format output
 
@@ -396,6 +398,7 @@ int main() {
                   << att_sjf << "\t" << (att_sjf > 0 ? d / att_sjf : 0.0) << "\t"
                   << att_srt << "\t" << (att_srt > 0 ? d / att_srt : 0.0) << "\n";
     }
+    
 
     return 0;
 }
