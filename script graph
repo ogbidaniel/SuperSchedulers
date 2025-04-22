@@ -21,3 +21,148 @@ plt.tight_layout()
 
 # Show the plot
 plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data
+d_values = [1, 5, 10, 20, 50, 100]
+ATT_FIFO = [1.67, 7.29, 104.51, 505.91, 1963.06, 4655.01]
+ATT_SJF = [1.64, 7.12, 76.78, 398.82, 1561.04, 3892.29]
+ATT_SRT = [1.61, 6.95, 76.43, 398.5, 1560.48, 3891.54]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d (n=100, k=1000, v_pct=0.3)')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data
+d_values = [0.4, 2, 4, 8, 20, 40]
+ATT_FIFO = [1.7, 3.26, 17.1, 116.14, 400.68, 926.78]
+ATT_SJF = [1.56, 3.06, 14.44, 93.08, 335.72, 791.76]
+ATT_SRT = [1.56, 3.06, 14.42, 92.84, 335.14, 789.46]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d (n=50, k=200, v_pct=0.3)')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data
+d_values = [20, 100, 200, 500, 1000, 2000]
+ATT_FIFO = [122.54, 2267.2, 4552.94, 11672.04, 23875.58, 48601.7]
+ATT_SJF = [90.14, 1831.48, 3911.34, 9565.32, 20538.12, 44025.08]
+ATT_SRT = [89.62, 1827.42, 3905.36, 9565.32, 20455.18, 43834.48]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d (n=50, k=1000, v_pct=0.3)')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data
+d_values = [2, 10, 20, 40, 100, 200]
+ATT_FIFO = [2.3, 15.98, 112.16, 597.7, 2236.44, 4056.2]
+ATT_SJF = [2.22, 15.12, 77.22, 358.98, 1681.36, 2938.94]
+ATT_SRT = [2.2, 14.8, 73.16, 357.38, 1672.7, 2935.34]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d (n=50, k=1000, v_pct=0.5)')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data
+d_values = [2, 10, 20, 40, 100, 200]
+ATT_FIFO = [2.24, 12.6, 99.34, 703.54, 2413.02, 4747.92]
+ATT_SJF = [2.24, 12.14, 67.98, 448.7, 1504.84, 2952.1]
+ATT_SRT = [2.22, 11.56, 64.66, 443.62, 1471.88, 2940.94]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d (n=50, k=1000, v_pct=0.7)')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data
+d_values = [2, 10, 20, 40, 100, 200]
+ATT_FIFO = [2.58, 24.1, 152.32, 890.84, 1971.9, 5790.62]
+ATT_SJF = [2.54, 20.54, 70.6, 462.36, 1119.72, 3535.54]
+ATT_SRT = [2.54, 19.82, 64.74, 457.58, 1112.94, 3486.0]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d (n=50, k=1000, v_pct=1)')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
