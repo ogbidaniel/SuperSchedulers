@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt  
+
+# Data
+d_values = [2, 10, 20, 40, 100, 200]
+ATT_FIFO = [2.32, 15.3, 95.88, 461.52, 1943.8, 4685.8]
+ATT_SJF = [2.32, 15.24, 74.04, 362.24, 1543.48, 3954.44]
+ATT_SRT = [2.32, 15.04, 72.38, 359.92, 1540.64, 3883.5]
+
+# Plotting
+plt.plot(d_values, ATT_FIFO, marker='o', label='FIFO')
+plt.plot(d_values, ATT_SJF, marker='s', label='SJF')
+plt.plot(d_values, ATT_SRT, marker='^', label='SRT')
+
+# Styling
+plt.title('Average Turnaround Time vs d')
+plt.xlabel('d (Average CPU Burst Time)')
+plt.ylabel('Average Turnaround Time (ATT)')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+
+# Show the plot
+plt.show()
