@@ -4,7 +4,7 @@ Simulating Batch scheduling algorithms. FIFO, SJF and SRT
 
 Team
  -  Danario Edgar
- -  Jason Haskell
+ -  Jason Martin
  -  Arrion Knight
  -  Kelechi
  -  Tarjae Hall
